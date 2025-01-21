@@ -9,7 +9,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-        state('permission') {
+        stage('permission') {
             steps {
                 sh 'chmod +x ./jenkins/scripts/*.sh'
             }
